@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<head>
+<script src="https://use.fontawesome.com/8af6c1b3d2.js"></script>
+
+<!-- font -->
+<link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.typekit.net/zew1dna.css">
+<script src="https://threejs.org/build/three.min.js"></script>
+<script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+<link rel="stylesheet" href="index_6.css">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<script src="script.js"></script>
+<script src="cylinder.js"></script>
+</head>
+<body class="week_body">
+    <div class="button_wrapper">
+        <div id="clock_view_button" class="view_button view_button_1">CLOCK</div>
+        <div id="day_view_button" class="view_button view_button_2">PARTICIPANTS</div>
+        <div id="week_view_button" class="view_button view_button_3">PROGRAM</div>
+        <div id="month_view_button" class="view_button view_button_4">MONTH</div>
+        <div id="whole_view_button" class="view_button view_button_5">YEAR</div>
+        <div id="about_view_button" class="view_button view_button_6">FUTURE SCHOOL</div>
+        <div id="nav_circle"></div>
+    </div>
+
+
+    <div class="view_wrapper empty_view">
+    </div>
+    <div class="view_wrapper about_view">
+        <div class="about_inner"></div>
+        <div class="logo"></div>
+    </div>
+    <div class="view_wrapper whole_view">
+        <div class="month_wrapper">
+            <div class='sub_title'>
+                JUNE / 06
+            </div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div><div class="in_text">Workshop - Taeyoon Choi</div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div><div class="in_text">TIME FOR CHANGE. TIME FOR SOMETHING ELSE.</div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+        </div>
+        <div class="month_wrapper">
+            <div class='sub_title'>
+                JUNE / 06
+            </div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+        </div>
+        <div class="month_wrapper">
+            <div class='sub_title'>
+                JUNE / 06
+            </div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+        </div>
+        <div class="month_wrapper">
+            <div class='sub_title'>
+                JUNE / 06
+            </div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+        </div>
+        <div class="month_wrapper">
+            <div class='sub_title'>
+                JUNE / 06
+            </div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+        </div>
+        <div class="month_wrapper">
+            <div class='sub_title'>
+                JUNE / 06
+            </div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+        </div>
+        <div class="month_wrapper">
+            <div class='sub_title'>
+                JUNE / 06
+            </div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+        </div>
+    </div>
+    <div class="view_wrapper month_view">
+            <div class='sub_title'>
+                JUNE / 06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10
+            </div>
+                <div class="week_name">
+                    <div class="day">sun</div>
+                    <div class="day">mon</div>
+                    <div class="day">tue</div>
+                    <div class="day">wed</div>
+                    <div class="day">thu</div>
+                    <div class="day">fri</div>
+                    <div class="day">sat</div>
+                </div>
+                <div class="week">
+                    <div class="day"><div class="circle"></div><div class="in_text">Workshop - Taeyoon Choi</div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                </div>
+                <div class="week">
+                    <div class="day"><div class="circle"></div><div class="in_text">Workshop - Taeyoon Choi</div></div>
+                    <div class="day">
+                        <div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div><div class="in_text">Workshop - Taeyoon Choi</div></div>
+                    <div class="day"><div class="circle"></div></div>
+                </div>
+                <div class="week">
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                </div>
+                <div class="week">
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                </div>
+                <div class="week">
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                    <div class="day"><div class="circle"></div></div>
+                </div>
+    </div>
+    <div class="view_wrapper week_view">
+        <div class= "clock_left"></div>
+        <div class= "clock_right"></div>
+                <div class="week">
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                </div>
+                <div class="week week2">
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="extra_wrap">
+                            <div class="date">TUE</div>
+                            <div class="circle"></div>
+                            <div class="hour">16:00</div>
+                        </div>
+                        <div class="in_text">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="view_wrapper day_view">
+        <div class="in_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut oﬃciis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut oﬃciis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+
+        uga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut oﬃciis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Et harum quidem rerum facilis est et expedita distincti At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut oﬃciis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut oﬃciis debitis aut rerum necessitatibus saepe eve.
+
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut oﬃciis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut oﬃciis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut oﬃciis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis dolor.
+
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui oﬃcia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut oﬃciis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis dolor.
+            
+        </div>
+    </div>
+    <div class="view_wrapper clock_view">
+        <div class="clock_s">Seoul</div>
+        <div class="clock_v">Venice</div>
+        <video id="theVideo">
+          <source src="time2_1_1.mp4" type="video/mp4">
+        </video>
+        <!-- <div class="clock"></div> -->
+    </div>
+
+
+
+</body>
